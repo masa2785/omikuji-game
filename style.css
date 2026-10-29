@@ -1,0 +1,22 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: 'Noto Sans JP', sans-serif; background: #1a0a2e; color: #f0e6ff; }
+.wrap { min-height: 100vh; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 32px 20px; }
+.title { font-size: 28px; font-weight: 900; color: #ffd700; text-align: center; margin-bottom: 8px; letter-spacing: 0.1em; }
+.subtitle { font-size: 14px; color: rgba(240,230,255,0.5); text-align: center; margin-bottom: 32px; }
+.roulette-container { position: relative; width: 280px; height: 280px; margin-bottom: 24px; }
+canvas { border-radius: 50%; }
+.needle { position: absolute; top: 50%; right: -12px; transform: translateY(-50%); width: 0; height: 0; border-top: 12px solid transparent; border-bottom: 12px solid transparent; border-left: 28px solid #ff4444; filter: drop-shadow(0 0 6px rgba(255,68,68,0.8)); }
+.spin-btn { background: linear-gradient(135deg, #ffd700, #ffaa00); color: #1a0a2e; font-family: 'Noto Sans JP', sans-serif; font-size: 20px; font-weight: 900; border: none; padding: 16px 48px; border-radius: 99px; cursor: pointer; letter-spacing: 0.1em; transition: transform 0.1s, opacity 0.2s; margin-bottom: 28px; box-shadow: 0 4px 20px rgba(255,215,0,0.4); }
+.spin-btn:hover { transform: scale(1.05); }
+.spin-btn:disabled { opacity: 0.4; cursor: default; transform: none; }
+.result-box { width: 100%; max-width: 320px; text-align: center; }
+.fortune-badge { font-size: 40px; font-weight: 900; padding: 8px 32px; border-radius: 8px; margin-bottom: 16px; display: inline-block; }
+.fortune-daikichi { background: #ffd700; color: #1a0a2e; }
+.fortune-kichi { background: #ff8c00; color: #fff; }
+.fortune-chuukichi { background: #4a90d9; color: #fff; }
+.fortune-shokichi { background: #5aaa5a; color: #fff; }
+.fortune-suekichi { background: #888; color: #fff; }
+.fortune-kyo { background: #333; color: #fff; border: 1px solid #555; }
+.fortune-daikyo { background: #1a0a2e; color: #ff4444; border: 2px solid #ff4444; }
+.fortune-text { font-size: 16px; line-height: 1.9; color: rgba(240,230,255,0.85); background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); border-radius: 12px; padding: 16px 20px; }
+.hidden { display: none; }
